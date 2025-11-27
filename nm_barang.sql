@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 27, 2025 at 12:03 PM
+-- Generation Time: Nov 27, 2025 at 12:11 PM
 -- Server version: 8.4.3
 -- PHP Version: 8.3.26
 
@@ -31,17 +31,15 @@ CREATE TABLE `tbl_barang` (
   `id_barang` int NOT NULL,
   `nama` varchar(60) NOT NULL,
   `kondisi` varchar(50) NOT NULL,
-  `lokasi` varchar(100) NOT NULL,
-  `tgl_peminjaman` date DEFAULT NULL,
-  `tgl_pengembalian` date DEFAULT NULL
+  `lokasi` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `tbl_barang`
 --
 
-INSERT INTO `tbl_barang` (`id_barang`, `nama`, `kondisi`, `lokasi`, `tgl_peminjaman`, `tgl_pengembalian`) VALUES
-(23, 'bbb', 'Rusak', 'Lab 2', NULL, NULL);
+INSERT INTO `tbl_barang` (`id_barang`, `nama`, `kondisi`, `lokasi`) VALUES
+(23, 'bbb', 'Rusak', 'Lab 2');
 
 --
 -- Indexes for dumped tables
